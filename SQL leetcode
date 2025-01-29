@@ -562,3 +562,8 @@ Cinema table:
 | 5  | House card | Interesting | 9.1    |
 +----+------------+-------------+--------+
 
+# Write your MySQL query statement below
+SELECT *
+FROM Cinema as c
+WHERE id % 2 = 1 AND description != 'boring'
+ORDER BY rating DESC
